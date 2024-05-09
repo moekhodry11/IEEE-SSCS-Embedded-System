@@ -56,7 +56,7 @@ void MRCC_voidEnableClock(u8 Copy_u8BusId, u8 Copy_u8PerId)
 {
 	//Copy_u8BusId is the bus that the peripheral is connected to like AHB, APB1, APB2
 	//Copy_u8PerId is the peripheral that we want to enable its clock like GPIOA, GPIOB, GPIOC, ...
-	if (Copy_u8PerId <= 31) //this is the maximum number of the peripherals that are connected to the AHB bus
+	if (Copy_u8PerId <= 31) //this is the maximum number of the peripherals that can be connected to the AHB, APB1, APB2 buses
 	{
 		switch (Copy_u8BusId)
 		{
